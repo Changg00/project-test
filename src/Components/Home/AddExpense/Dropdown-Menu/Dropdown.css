@@ -1,0 +1,9 @@
+.selector {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dropbox {
+  width: 30%;
+}
