@@ -70,7 +70,7 @@ function Header(props) {
           {/* </Slide> */}
         </div>
       </section>
-        <h1 className='title'>BillTrax</h1>
+        <h1 className='title'>Bill Tracker</h1>
       <section id='logout-btn'>
         <button
           className='logout-style'

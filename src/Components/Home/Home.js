@@ -146,7 +146,7 @@ return (
 
       <footer>
         <div className='footer-text'>
-          <p>Copyright &copy; BillTrax 2021</p>
+          <p>Copyright &copy; Bill Tracker 2021</p>
         </div>
       </footer>
 

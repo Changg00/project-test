@@ -88,8 +88,6 @@ console.log('read range', startDate, endDate)
     }
   },
 
-
-  // Passes Postman test
   editExpense: async (req, res) => {
     const {dueDate, expenseTitle, amount, billType} = req.body
     const [bill] = await req.app.get('db').expenses.read_expense([req.params.id])

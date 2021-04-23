@@ -21,7 +21,7 @@ massive({
   ssl: {rejectUnauthorized: false}
 }).then(db => {
   app.set('db', db)
-  console.log('db connected!')
+  console.log('db connected! working, you can relax now')
 })
 
 app.use(
@@ -47,11 +47,13 @@ app.post('/api/expenses-range', auth.userOnly, ctrlExpense.readRangeExpenses)
 app.put('/api/edit-expense/:id', auth.userOnly, ctrlExpense.editExpense)
 app.delete('/api/expense/:id', auth.userOnly, ctrlExpense.deleteExpense) 
 
-app.use(express.static(__dirname + '/../build'))
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../build/index.html'))
-})
+//HOSTING//
+// app.use(express.static(__dirname + '/../build'))
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../build/index.html'))
+// })
 
 app.listen(SERVER_PORT, _ => {
   console.log(`Hi! I'm your server and I'm listening on port: ${SERVER_PORT}! This is the best thing EVER!`)
