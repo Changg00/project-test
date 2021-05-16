@@ -48,7 +48,7 @@ app.put('/api/edit-expense/:id', auth.userOnly, ctrlExpense.editExpense)
 app.delete('/api/expense/:id', auth.userOnly, ctrlExpense.deleteExpense) 
 
 
-HOSTING//
+// HOSTING//
 app.use(express.static(__dirname + '/../build'))
 
 app.get('*', (req, res) => {
